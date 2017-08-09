@@ -1,14 +1,15 @@
 #canvas-background {
     background-color: grey;
-    padding-block-start: 1%;
-    padding-block-end: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     width: 800px;
 }
 
 #container {
     width: 770px;
     height: 770px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box {

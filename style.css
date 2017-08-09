@@ -1,3 +1,16 @@
+#canvas-background {
+    background-color: grey;
+    padding-block-start: 1%;
+    padding-block-end: 1%;
+    width: 340px;
+}
+
+#container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
 .box {
     width: 98px;
     height: 98px;
@@ -6,15 +19,17 @@
     float: left;
 }
 
-#container {
+#palette {
     width: 300px;
-    height: 300px;
+    height: 75px;
+    margin: 0 auto;
+    background-color: dimgrey;
 }
 
-.current-color{
-    width: 98px;
-    height: 98px;
-    background-color: red;
+.pen {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     border: 1px solid black;
-    float: left;
+    margin: 1%;
 }

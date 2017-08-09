@@ -34,10 +34,18 @@ function renderPalette() {
         colorOption.addEventListener('click', grabSelectedColor);
         paletteObj.appendChild(colorOption);
     }
+    const textDescription = document.createElement("div");
+    textDescription.innerHTML = "CURRENT COLOR: ";
+    textDescription.style.float = "left";
+    paletteObj.appendChild(textDescription);
+    let colorIndicator = document.createElement("div");
+    colorIndicator.setAttribute("id", "currentColor");
+    paletteObj.appendChild(colorIndicator);
 }
 
 function grabSelectedColor() {
     selectedColor = this.id;
+    document.getElementById("currentColor").style.backgroundColor = selectedColor;
 }
 
 function grabLocation() {

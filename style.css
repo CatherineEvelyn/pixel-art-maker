@@ -34,3 +34,12 @@
     border: 1px solid black;
     margin: 1%;
 }
+
+#currentColor {
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    border: 1px solid black;
+    margin: 1%;
+    background-color: black;
+}

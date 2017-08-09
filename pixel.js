@@ -1,9 +1,10 @@
 window.onload = basicGrid();
+var selectedColor = "black";
 
 function basicGrid() {
     const canvas = document.getElementById("container");
     let theBox = "";
-    for(let canvasSize = 0; canvasSize < 3*3; canvasSize++) {
+    for(let canvasSize = 0; canvasSize < 64*64; canvasSize++) {
         theBox = document.createElement('div');
         theBox.className = "box";
         theBox.setAttribute("id", canvasSize);
@@ -36,11 +37,11 @@ function renderPalette() {
 }
 
 function grabSelectedColor() {
-    let holdColorId = this.id; console.log("selected color " + holdColorId);
+    selectedColor = this.id;
 }
 
 function grabLocation() {
-    let holdId = this.id; console.log("location" + holdId);
+    let holdId = this.id;
     let selectedBox = document.getElementById(holdId); 
-    selectedBox.style.backgroundColor = "red"//create var to hold the chosen color;
+    selectedBox.style.backgroundColor = selectedColor;
 }
